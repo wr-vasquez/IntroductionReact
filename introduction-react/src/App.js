@@ -8,7 +8,7 @@ import { TodoItem } from './TodoItem';
 import { CreateTodoButton } from './CreateTodoButton';
 
 const todos =[
-  { text: 'Cortar Cebolla', completed:false},
+  { text: 'Aprende a Programar', completed:false},
   { text: 'Tomar el curso de React', completed:false},
   { text: 'Gritar de Alegria', completed:false}
 ]
@@ -18,12 +18,12 @@ function App() {
       <TodoCounter />
     
     <TodoSearch />
-    <input placeholder ="Cebolla" />
+    <input placeholder ="Datos" />
 
     <TodoList> 
         {/* Se crea una arrow function para recorrer o mapear los datos de un array */}
       {todos.map(todo => (
-        <TodoItem/>
+        <TodoItem key={todo.text} text={todo.text} /> /*Con el key identificamos lso todos */
 
         ))}
     
