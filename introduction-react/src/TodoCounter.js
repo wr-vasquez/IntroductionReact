@@ -1,8 +1,15 @@
 import React from "react";
+import '../src/styles/search.css'
 
 function TodoCounter(){
     return(
-        <h2>Has completado 2 de 3</h2>
+        /**Este es una forma de agragar estilos en linea */
+        <h2 /* style={
+            {color: 'red',
+            backgroundColor: 'green'
+            
+        }
+        } */ className="TodoCounter">Has completado 2 de 3</h2>
 
     );
 }

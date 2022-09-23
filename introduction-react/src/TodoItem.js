@@ -3,8 +3,8 @@ import React from 'react'
 
 export const TodoItem = (props) => {
   return (
-    <li>
-        <span>C</span>
+    <li className='TodoItem' >
+        <span className={'Icon, Icon-check $ {props.complete} '}  >C</span>
         <p>{props.text} </p>
         <span>X</span>
         
