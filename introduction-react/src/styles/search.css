@@ -61,6 +61,11 @@ ul {
   font-family: 'Monserrat';
   font-weight: 400;
 }
+
+.TodoSearch:focus{
+  outline: #61DAFA;
+
+}
 .TodoItem {
     background-color: #FAFAFA;
     position: relative;
