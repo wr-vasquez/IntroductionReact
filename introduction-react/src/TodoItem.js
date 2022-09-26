@@ -8,7 +8,7 @@ function  TodoItem (props) {
         √
           </span>
 
-        <p className={`TodoItem-p ${props.completed && 'TodoItem-p--completed'}`}  > {props.xt} </p>
+        <p className={`TodoItem-p ${props.completed && 'TodoItem-p--completed'}`}  > {props.text} </p>
         <span className='Icon Icon-delete'>
           X
           </span>
