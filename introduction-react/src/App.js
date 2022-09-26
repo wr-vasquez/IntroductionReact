@@ -10,7 +10,7 @@ import { CreateTodoButton } from './CreateTodoButton';
 
 
 const todos =[
-  { text: 'Aprende a Programar', completed:false},
+  { text: 'Aprende a Programar', completed:true},
   { text: 'Tomar el curso de React', completed:false},
   { text: 'Gritar de Alegria', completed:false}
 
@@ -22,13 +22,17 @@ function App() {
       <TodoCounter />
     
     <TodoSearch />
-    <input placeholder ="Datos" />
+  
 
     <TodoList> 
         {/* Se crea una arrow function para recorrer o mapear los datos de un array */}
       {todos.map(todo => (
-        <TodoItem key={todo.text} text={todo.text} /> /*Con el key identificamos lso todos */
-
+        <TodoItem 
+        key={todo.text} 
+        text={todo.text} 
+        completed={todo.completed}
+        /> /*Con el key identificamos lso todos */
+      
         ))}
     
     </TodoList>
