@@ -12,10 +12,10 @@ import { CreateTodoButton } from './CreateTodoButton';
 const todos =[
   { text: 'Aprende a Programar', completed:true},
   { text: 'Tomar el curso de React', completed:false},
-  { text: 'Gritar de Alegria', completed:false}
+  { text: 'Gritar de Alegria', completed:false},
 
 
-]
+];
 function App() {
   return (
     <React.Fragment>
